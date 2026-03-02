@@ -27,10 +27,99 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="Styles/style.css">
 
+    <!-- JS Link -->
+    <script src="Script/index.js" defer></script>
+
 </head>
 
 <body>
-    <h2 class="text-3xl font-bold text-center mt-10">Welcome to English Janala</h2>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a href="" class=""><i class="fa-solid fa-circle-question"></i>
+                                FAQ</a>
+                        </li>
+
+                        <li>
+                            <a href="" class=""><i class="fa-solid fa-book"></i>
+                                Learn</a>
+                        </li>
+
+                        <li>
+                            <a href="" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="flex items-center gap-1">
+                    <span class="text-lg font-bold">English</span>
+                    <img src="Images/logo.png" alt="">
+                    <span class="font-Bangla text-lg font-semibold">জানালা</span>
+                </a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-4">
+                    <li>
+                        <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>
+                            FAQ</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book"></i>
+                            Learn</a>
+                    </li>
+
+                    <li>
+                        <a href="" class="btn btn-outline btn-primary"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i>
+                            LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
+        <div class="contant flex-1 text-center md:text-left">
+            <h2 class="font-bold text-4xl mb-8"><span class="text-sky-400">English</span> is Easy !!</h2>
+            <p class="font-Bangla mb-8">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা
+                বাড়াতে চান, আমাদের
+                Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+                <input type="text" class="input" placeholder="Enter your Name" />
+                <input type="password" class="input" placeholder="Enter your password" />
+                <button class="btn btn-primary mt-4 ">Get Started</button>
+            </fieldset>
+        </div>
+        <div class="image flex-1">
+            <img src="Images/hero-student.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="font-bold text-4xl mb-8 text-center">
+            <span class="text-sky-400">Let's</span> Learn Vocabularies
+        </h2>
+
+        <div id="level-container"  class="flex flex-wrap gap-6 justify-center">
+            <!-- Level cards will be dynamically inserted here -->
+
+        </div>
+    </section>
 
 </body>
 
