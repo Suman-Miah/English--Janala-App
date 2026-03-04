@@ -115,11 +115,37 @@
             <span class="text-sky-400">Let's</span> Learn Vocabularies
         </h2>
 
-        <div id="level-container"  class="flex flex-wrap gap-6 justify-center">
+        <div id="lebel-container" class="flex flex-wrap gap-6 justify-center">
             <!-- Level cards will be dynamically inserted here -->
 
         </div>
     </section>
+
+    <section id="word-container"
+        class="bg-gray-100 p-10 w-11/12 mx-auto mt-10 rounded-lg shadow-md grid grid-cols-3 gap-5">
+        <!-- Word details will be dynamically inserted here -->
+        <div class="font-Bangla col-span-full bg-sky-100 text-center rounded-xl py-10 space-y-6">
+            <p class="text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি </p>
+            <h2 class="font-bold text-4xl ">একটি Lesson Select করুন।</h2>
+        </div>
+
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container">
+
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
 </body>
 
