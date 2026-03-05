@@ -110,17 +110,37 @@
         </div>
     </section>
 
+    <!-- level-container -->
     <section>
         <h2 class="font-bold text-4xl mb-8 text-center">
             <span class="text-sky-400">Let's</span> Learn Vocabularies
         </h2>
 
-        <div id="lebel-container" class="flex flex-wrap gap-6 justify-center">
+        <div id="level-container" class="flex flex-wrap gap-6 justify-center">
             <!-- Level cards will be dynamically inserted here -->
 
         </div>
     </section>
 
+    <!-- Search Section -->
+    <section class="flex justify-center gap-5 items-center py-10">
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+                    <input id="input-search" type="text" placeholder="search" required />
+                </label>
+
+            </div>
+            <button id="btn-search" class="btn btn-primary join-item">Search</button>
+        </div>
+    </section>
+
+    <!-- spinner-section -->
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+        <span class="loading loading-bars loading-xl"></span>
+    </section>
+
+    <!-- word-container -->
     <section id="word-container"
         class="bg-gray-100 p-10 w-11/12 mx-auto mt-10 rounded-lg shadow-md grid grid-cols-3 gap-5">
         <!-- Word details will be dynamically inserted here -->
@@ -131,11 +151,10 @@
 
     </section>
 
-    <!-- Open the modal using ID.showModal() method -->
-    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <!-- word_modal -->
     <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <div id="details-container">
+            <div id="details-container" class="space-y-4">
 
             </div>
             <div class="modal-action">
